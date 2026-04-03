@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "title": "봄 웨딩 특별 프로모션",
+    "description": "3~5월 예식 예약 시 스드메 패키지 15% 할인! 바른웨딩에서만 만날 수 있는 특별한 혜택.",
+    "startDate": "2026-03-01",
+    "endDate": "2026-05-31",
+    "status": "진행중",
+    "visible": true
+  },
+  {
+    "id": "2",
+    "title": "신규 가입 이벤트",
+    "description": "바른웨딩 회원 가입 시 웨딩 체크리스트 프리미엄 기능 3개월 무료 제공.",
+    "startDate": "2026-04-01",
+    "endDate": "2026-06-30",
+    "status": "진행중",
+    "visible": true
+  },
+  {
+    "id": "3",
+    "title": "2026 서울 웨딩 박람회",
+    "description": "코엑스에서 열리는 대한민국 최대 웨딩 박람회.",
+    "startDate": "2026-05-15",
+    "endDate": "2026-05-17",
+    "status": "예정",
+    "visible": true
+  },
+  {
+    "id": "4",
+    "title": "후기 작성 이벤트",
+    "description": "바른웨딩을 통해 결혼 준비를 하신 분! 후기 작성 시 스타벅스 기프트카드.",
+    "startDate": "2026-01-01",
+    "endDate": "2026-12-31",
+    "status": "진행중",
+    "visible": true
+  }
+]

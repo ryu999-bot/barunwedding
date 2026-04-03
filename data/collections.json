@@ -1,0 +1,62 @@
+[
+  {
+    "id": "s1",
+    "category": "스튜디오",
+    "brand": "아이디 스튜디오",
+    "title": "내추럴 웨딩 촬영 패키지",
+    "imageUrl": "/images/studio-1.jpg",
+    "price": 1200000,
+    "rating": 4.8,
+    "reviewCount": 89
+  },
+  {
+    "id": "s2",
+    "category": "드레스",
+    "brand": "모니카블랑",
+    "title": "클래식 A라인 웨딩드레스",
+    "imageUrl": "/images/dress-1.jpg",
+    "price": 800000,
+    "rating": 4.9,
+    "reviewCount": 156
+  },
+  {
+    "id": "s3",
+    "category": "헤어메이크업",
+    "brand": "제니하우스",
+    "title": "프리미엄 신부 메이크업",
+    "imageUrl": "/images/makeup-1.jpg",
+    "price": 600000,
+    "rating": 4.7,
+    "reviewCount": 112
+  },
+  {
+    "id": "s4",
+    "category": "본식스냅",
+    "brand": "온뜰에피움",
+    "title": "본식 스냅 촬영",
+    "imageUrl": "/images/snap-1.jpg",
+    "price": 500000,
+    "rating": 4.6,
+    "reviewCount": 78
+  },
+  {
+    "id": "s5",
+    "category": "패키지",
+    "brand": "바른웨딩",
+    "title": "올인원 스드메 패키지",
+    "imageUrl": "/images/package-1.jpg",
+    "price": 2500000,
+    "rating": 4.8,
+    "reviewCount": 203
+  },
+  {
+    "id": "s6",
+    "category": "스튜디오",
+    "brand": "루벨리",
+    "title": "시네마틱 웨딩 영상",
+    "imageUrl": "/images/studio-2.jpg",
+    "price": 1500000,
+    "rating": 4.7,
+    "reviewCount": 67
+  }
+]

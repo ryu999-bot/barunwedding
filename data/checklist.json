@@ -1,0 +1,98 @@
+[
+  {
+    "id": "c1",
+    "title": "예식 날짜 확정",
+    "category": "필수",
+    "dueMonths": 12,
+    "completed": false,
+    "description": "양가 상의 후 예식 날짜를 결정합니다."
+  },
+  {
+    "id": "c2",
+    "title": "웨딩홀 답사 및 계약",
+    "category": "필수",
+    "dueMonths": 10,
+    "completed": false,
+    "description": "최소 3~5곳 이상 답사 후 계약합니다."
+  },
+  {
+    "id": "c3",
+    "title": "스드메 업체 선정",
+    "category": "필수",
+    "dueMonths": 8,
+    "completed": false,
+    "description": "스튜디오, 드레스, 메이크업 업체를 선정합니다."
+  },
+  {
+    "id": "c4",
+    "title": "청첩장 제작",
+    "category": "필수",
+    "dueMonths": 3,
+    "completed": false,
+    "description": "디자인 선택 후 인쇄 및 모바일 청첩장을 제작합니다."
+  },
+  {
+    "id": "c5",
+    "title": "예물/예단 준비",
+    "category": "전통",
+    "dueMonths": 6,
+    "completed": false,
+    "description": "양가 협의 후 예물과 예단을 준비합니다."
+  },
+  {
+    "id": "c6",
+    "title": "혼수 준비",
+    "category": "생활",
+    "dueMonths": 4,
+    "completed": false,
+    "description": "가전, 가구, 생활용품 등을 준비합니다."
+  },
+  {
+    "id": "c7",
+    "title": "신혼집 계약",
+    "category": "생활",
+    "dueMonths": 6,
+    "completed": false,
+    "description": "신혼집을 구하고 인테리어를 계획합니다."
+  },
+  {
+    "id": "c8",
+    "title": "신혼여행 예약",
+    "category": "여행",
+    "dueMonths": 3,
+    "completed": false,
+    "description": "여행지 선정 후 항공권과 숙소를 예약합니다."
+  },
+  {
+    "id": "c9",
+    "title": "주례/사회자 섭외",
+    "category": "예식",
+    "dueMonths": 4,
+    "completed": false,
+    "description": "주례 또는 사회자를 섭외합니다."
+  },
+  {
+    "id": "c10",
+    "title": "축가/영상 준비",
+    "category": "예식",
+    "dueMonths": 2,
+    "completed": false,
+    "description": "축가자 섭외 또는 축하 영상을 제작합니다."
+  },
+  {
+    "id": "c11",
+    "title": "최종 피팅",
+    "category": "필수",
+    "dueMonths": 1,
+    "completed": false,
+    "description": "드레스/턱시도 최종 피팅 및 수선을 완료합니다."
+  },
+  {
+    "id": "c12",
+    "title": "하객 명단 확정",
+    "category": "필수",
+    "dueMonths": 1,
+    "completed": false,
+    "description": "최종 하객 인원을 확정하고 식장에 알립니다."
+  }
+]

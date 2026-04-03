@@ -1,0 +1,164 @@
+{
+  "about": {
+    "hero": {
+      "image": "/images/hall-1.jpg",
+      "title": "바른웨딩 소개"
+    },
+    "intro": {
+      "heading": "결혼 준비의 모든 순간을,\n당신의 속도와 취향에 맞춰",
+      "body": "바른웨딩은 바른카드 50년의 브랜드 신뢰를 기반으로 탄생한 프리미엄 웨딩 컨설팅 플랫폼입니다.\n기존 웨딩 컨설팅 시장의 불투명한 비용 구조와 복잡한 준비 과정을 혁신하여,\n예비 부부가 스트레스 없이 결혼을 준비할 수 있도록 돕습니다.\n\n투명한 비용 공개, AI 기반 비용 시뮬레이터, 전문 플래너 매칭,\nD-Day 체크리스트까지 — 결혼 준비의 A부터 Z까지 함께합니다."
+    },
+    "guarantee": {
+      "heading": "바른손 안심 보장",
+      "body": "웨딩컨설팅 업체의 폐업·먹튀로 인한 예비부부 피해가 사회적 문제로 대두되고 있습니다.",
+      "body2": "바른웨딩은 바른손그룹의 안정적 캐시플로우를 기반으로, 제휴 업체가 부도나더라도 고객의 계약금과 서비스를 100% 보장하는 안심 보장 제도를 운영합니다. 대기업 수준의 자금 안정성이 뒷받침하는 이 보장은 타사가 절대 따라할 수 없는 바른웨딩만의 핵심 차별점입니다.",
+      "items": [
+        "제휴 웨딩홀·스드메 업체 부도 시 계약금 전액 환불",
+        "대체 업체 즉시 매칭 및 동일 조건 서비스 보장",
+        "바른손그룹 자금력 기반 — 보증보험 수준의 안전망",
+        "계약서에 안심 보장 조항 명시, 법적 효력 보장"
+      ]
+    },
+    "freebie": {
+      "image": "/images/package-1.jpg",
+      "heading": "스드메 계약 시\n5종 올인원 무료 제공",
+      "body": "바른웨딩에서 스드메(스튜디오+드레스+메이크업) 패키지를 계약하시면,\n청첩장·봉투·스티커·식권·식전영상까지 모두 무료로 제공합니다.\n바른카드 50년 전통의 프리미엄 품질 그대로, 추가 비용 없이 받아보세요.",
+      "items": [
+        "프리미엄 종이 청첩장 200매 + 모바일 청첩장",
+        "맞춤 디자인 봉투 + 스티커 세트",
+        "식권 200매 제작 포함",
+        "식전 영상 제작 (사진 기반 3분 영상)",
+        "스드메 패키지 계약 시 자동 적용"
+      ]
+    }
+  },
+  "services": {
+    "hero": {
+      "image": "/images/hall-3.jpg",
+      "title": "웨딩 서비스"
+    },
+    "items": [
+      {
+        "title": "웨딩홀 컨설팅",
+        "description": "호텔, 하우스, 컨벤션 등 200여 개 제휴 웨딩홀 중 예산과 취향에 맞는 최적의 장소를 추천합니다.",
+        "image": "/images/hall-1.jpg",
+        "link": "/wedding-halls"
+      },
+      {
+        "title": "스드메 패키지",
+        "description": "스튜디오, 드레스, 헤어메이크업을 원스톱으로 제공합니다. 검증된 파트너사와의 제휴로 합리적인 가격에 최고의 퀄리티를 보장합니다.",
+        "image": "/images/dress-1.jpg",
+        "link": "/wedding-collection"
+      },
+      {
+        "title": "AI 비용 시뮬레이터",
+        "description": "웨딩홀, 스드메, 부가서비스까지 조건별 총 비용을 실시간으로 계산합니다.",
+        "image": "/images/package-1.jpg",
+        "link": "/simulator"
+      },
+      {
+        "title": "D-Day 체크리스트",
+        "description": "결혼 준비 12개월 타임라인을 체계적으로 관리합니다.",
+        "image": "/images/snap-1.jpg",
+        "link": "/checklist"
+      },
+      {
+        "title": "전담 플래너 매칭",
+        "description": "희망 조건과 스타일에 맞는 전담 웨딩 플래너를 매칭합니다.",
+        "image": "/images/studio-1.jpg",
+        "link": "/about/planners"
+      },
+      {
+        "title": "웨딩 매거진",
+        "description": "웨딩 트렌드, 준비 팁, 비용 절약법 등 결혼 준비에 필요한 모든 정보를 제공합니다.",
+        "image": "/images/hall-5.jpg",
+        "link": "/magazine"
+      }
+    ]
+  },
+  "planners": {
+    "hero": {
+      "image": "/images/page-1775194944140.jpg",
+      "title": "웨딩 플래너"
+    },
+    "items": [
+      {
+        "name": "김수현",
+        "title": "수석 플래너",
+        "career": "12년",
+        "specialty": "호텔 웨딩 · 대형 웨딩",
+        "description": "300회 이상의 호텔 웨딩을 성공적으로 진행한 베테랑 플래너.",
+        "image": "/images/page-1775197293088.jpg",
+        "rating": 4.9,
+        "reviews": 156,
+        "instagram": "https://www.instagram.com/barunsoncard/"
+      },
+      {
+        "name": "유혜민",
+        "title": "시니어 플래너",
+        "career": "8년",
+        "specialty": "스몰 웨딩 · 가든 웨딩",
+        "description": "프라이빗한 소규모 웨딩의 전문가.",
+        "image": "/images/page-1775197270234.jpg",
+        "rating": 4.8,
+        "reviews": 98
+      },
+      {
+        "name": "강은지",
+        "title": "시니어 플래너",
+        "career": "7년",
+        "specialty": "비용 최적화 · 패키지 설계",
+        "description": "합리적인 예산 안에서 최고의 웨딩을 만드는 비용 전문가.",
+        "image": "/images/page-1775197298641.jpg",
+        "rating": 4.7,
+        "reviews": 87
+      },
+      {
+        "name": "이하은",
+        "title": "플래너",
+        "career": "5년",
+        "specialty": "트렌디 웨딩 · SNS 웨딩",
+        "description": "최신 웨딩 트렌드에 밝은 감각파 플래너.",
+        "image": "/images/page-1775197305983.jpg",
+        "rating": 4.8,
+        "reviews": 64
+      }
+    ]
+  },
+  "location": {
+    "address": "서울특별시 강남구 테헤란로 152",
+    "addressDetail": "바른빌딩 12층",
+    "phone": "02-1234-5678",
+    "email": "hello@barun-wedding.kr",
+    "hours": [
+      "평일 09:00 - 18:00",
+      "토요일 10:00 - 15:00 (예약 상담)",
+      "일요일·공휴일 휴무"
+    ],
+    "subway": [
+      "2호선 강남역 1번 출구 도보 5분",
+      "신분당선 강남역 5번 출구 도보 3분"
+    ],
+    "parking": [
+      "건물 지하 주차장 이용 가능",
+      "상담 고객 2시간 무료 주차"
+    ]
+  },
+  "familySites": [
+    {
+      "name": "바른손카드",
+      "url": "https://www.barunsoncard.com",
+      "visible": true
+    },
+    {
+      "name": "디얼디어",
+      "url": "https://deardeer.kr/events/eGift",
+      "visible": true
+    },
+    {
+      "name": "더기프트(답례품)",
+      "url": "https://www.barunsonthegift.com/",
+      "visible": true
+    }
+  ]
+}

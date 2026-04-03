@@ -1,0 +1,48 @@
+[
+  {
+    "id": "1",
+    "name": "김민영",
+    "phone": "010-1234-5678",
+    "email": "min@email.com",
+    "weddingDate": "2026-10-15",
+    "guestCount": "200~300명",
+    "services": [
+      "웨딩홀",
+      "스드메"
+    ],
+    "message": "강남 근처 호텔 웨딩홀을 찾고 있습니다.",
+    "date": "2026-04-02 14:30",
+    "status": "대기",
+    "note": ""
+  },
+  {
+    "id": "2",
+    "name": "이준호",
+    "phone": "010-2345-6789",
+    "email": "junho@email.com",
+    "weddingDate": "2026-11-20",
+    "guestCount": "100~200명",
+    "services": [
+      "스드메"
+    ],
+    "message": "스드메 패키지 상담 원합니다.",
+    "date": "2026-04-02 11:15",
+    "status": "대기",
+    "note": ""
+  },
+  {
+    "id": "3",
+    "name": "박서현",
+    "phone": "010-3456-7890",
+    "email": "seo@email.com",
+    "weddingDate": "2026-09-05",
+    "guestCount": "50~100명",
+    "services": [
+      "웨딩홀"
+    ],
+    "message": "소규모 하우스 웨딩 준비 중입니다.",
+    "date": "2026-04-01 16:45",
+    "status": "처리중",
+    "note": "아펠가모 반포 추천."
+  }
+]
