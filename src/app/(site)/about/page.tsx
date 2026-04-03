@@ -64,14 +64,12 @@ export default function AboutPage() {
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-10 py-20 lg:py-28">
         <div className="max-w-3xl mx-auto text-center">
           <p className="font-serif text-sage text-[14px] tracking-[3px] uppercase mb-4">Our Story</p>
-          <h2
-            className="font-serif text-3xl lg:text-4xl text-[#212121] leading-snug mb-8"
-            dangerouslySetInnerHTML={{ __html: data.intro.heading }}
-          />
-          <p
-            className="text-[14px] text-[#6b6b6b] leading-[2]"
-            dangerouslySetInnerHTML={{ __html: data.intro.body }}
-          />
+          <h2 className="font-serif text-3xl lg:text-4xl text-[#212121] leading-snug mb-8 whitespace-pre-line">
+            {data.intro.heading}
+          </h2>
+          <p className="text-[14px] text-[#6b6b6b] leading-[2] whitespace-pre-line">
+            {data.intro.body}
+          </p>
         </div>
       </div>
 
@@ -90,10 +88,9 @@ export default function AboutPage() {
               <p className="text-[15px] text-white/70 leading-[2] mb-6">
                 {data.guarantee.body}
               </p>
-              <p
-                className="text-[15px] text-white/90 leading-[2] mb-8"
-                dangerouslySetInnerHTML={{ __html: data.guarantee.body2 }}
-              />
+              <p className="text-[15px] text-white/90 leading-[2] mb-8 whitespace-pre-line">
+                {data.guarantee.body2}
+              </p>
               <div className="grid grid-cols-3 gap-6">
                 <div className="text-center">
                   <p className="font-serif text-3xl text-sage">100%</p>
@@ -139,10 +136,9 @@ export default function AboutPage() {
                 <Gift className="h-4 w-4" />
                 Special Benefit
               </div>
-              <h2
-                className="font-serif text-2xl lg:text-3xl text-[#212121] leading-snug mb-4"
-                dangerouslySetInnerHTML={{ __html: data.freebie.heading }}
-              />
+              <h2 className="font-serif text-2xl lg:text-3xl text-[#212121] leading-snug mb-4 whitespace-pre-line">
+                {data.freebie.heading}
+              </h2>
               <p className="text-[14px] text-[#6b6b6b] leading-[2] mb-6">
                 {data.freebie.body}
               </p>

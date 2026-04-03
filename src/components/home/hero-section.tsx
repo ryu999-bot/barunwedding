@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState, useCallback } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { apiFetch } from "@/lib/api";
+import { apiFetch, apiUrl } from "@/lib/api";
 
 interface Slide {
   id: string;
@@ -101,7 +101,7 @@ export function HeroSection() {
               playsInline
               autoPlay
               loop
-              src={s.src}
+              src={s.src.startsWith("/") ? apiUrl(s.src) : s.src}
             />
           ) : (
             <Image
