@@ -22,6 +22,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { deleteImage } from "@/lib/admin-api";
+import { apiFetch } from "@/lib/api";
 
 interface PhotoItem {
   id: string;
@@ -64,8 +65,8 @@ export default function AdminPhotosPage() {
     try {
       setLoading(true);
       const [hallsRes, collectionsRes] = await Promise.all([
-        fetch("/api/data/wedding-halls"),
-        fetch("/api/data/collections"),
+        apiFetch("/api/data/wedding-halls"),
+        apiFetch("/api/data/collections"),
       ]);
 
       const photoList: PhotoItem[] = [];

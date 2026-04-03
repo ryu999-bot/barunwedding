@@ -2,7 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 
-const FILE = path.join(process.cwd(), "data", "pages.json");
+const DATA_DIR = process.env.DATA_DIR || path.join(process.cwd(), "data");
+const FILE = path.join(DATA_DIR, "pages.json");
 
 export const dynamic = "force-dynamic";
 

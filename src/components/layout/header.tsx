@@ -5,6 +5,7 @@ import { useState, useRef, useEffect } from "react";
 import { Menu, X, ChevronDown, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { apiFetch } from "@/lib/api";
 
 const aboutSubItems = [
   { href: "/about", label: "바른웨딩 소개" },
@@ -52,7 +53,7 @@ export function Header() {
   }, []);
 
   useEffect(() => {
-    fetch("/api/pages")
+    apiFetch("/api/pages")
       .then((r) => r.json())
       .then((d) => {
         if (d.familySites) setFamilySites(d.familySites.filter((s: FamilySite) => s.visible));

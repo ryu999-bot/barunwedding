@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { apiFetch } from "@/lib/api";
 
 interface ServiceItem {
   title: string;
@@ -21,7 +22,7 @@ export default function ServicesPage() {
   const [data, setData] = useState<ServicesData | null>(null);
 
   useEffect(() => {
-    fetch("/api/pages")
+    apiFetch("/api/pages")
       .then((res) => res.json())
       .then((json) => setData(json.services))
       .catch(console.error);

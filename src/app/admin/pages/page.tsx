@@ -22,6 +22,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { uploadImage } from "@/lib/admin-api";
+import { apiFetch } from "@/lib/api";
 
 interface PageData {
   about: {
@@ -70,7 +71,7 @@ export default function AdminPagesPage() {
   const [uploadTarget, setUploadTarget] = useState<string>("");
 
   useEffect(() => {
-    fetch("/api/pages")
+    apiFetch("/api/pages")
       .then((r) => r.json())
       .then((d) => { setData(d); setLoading(false); });
   }, []);
@@ -78,7 +79,7 @@ export default function AdminPagesPage() {
   const save = async () => {
     if (!data) return;
     setSaving(true);
-    await fetch("/api/pages", {
+    await apiFetch("/api/pages", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),

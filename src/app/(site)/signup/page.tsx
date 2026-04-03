@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 import { CheckCircle } from "lucide-react";
+import { apiFetch } from "@/lib/api";
 
 export default function SignupPage() {
   const [submitted, setSubmitted] = useState(false);
@@ -57,7 +58,7 @@ export default function SignupPage() {
         <form
           onSubmit={async (e) => {
             e.preventDefault();
-            await fetch("/api/data/members", {
+            await apiFetch("/api/data/members", {
               method: "POST",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify({

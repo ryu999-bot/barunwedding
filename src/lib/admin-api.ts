@@ -1,5 +1,7 @@
+import { apiFetch } from "@/lib/api";
+
 export async function fetchCollection<T>(collection: string): Promise<T[]> {
-  const res = await fetch(`/api/data/${collection}`);
+  const res = await apiFetch(`/api/data/${collection}`);
   if (!res.ok) throw new Error("Failed to fetch");
   return res.json();
 }
@@ -8,7 +10,7 @@ export async function fetchItem<T>(
   collection: string,
   id: string
 ): Promise<T> {
-  const res = await fetch(`/api/data/${collection}/${id}`);
+  const res = await apiFetch(`/api/data/${collection}/${id}`);
   if (!res.ok) throw new Error("Not found");
   return res.json();
 }
@@ -17,7 +19,7 @@ export async function saveItem<T>(
   collection: string,
   item: T
 ): Promise<T> {
-  const res = await fetch(`/api/data/${collection}`, {
+  const res = await apiFetch(`/api/data/${collection}`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(item),
@@ -31,7 +33,7 @@ export async function updateItem<T>(
   id: string,
   item: T
 ): Promise<T> {
-  const res = await fetch(`/api/data/${collection}/${id}`, {
+  const res = await apiFetch(`/api/data/${collection}/${id}`, {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(item),
@@ -44,7 +46,7 @@ export async function deleteItem(
   collection: string,
   id: string
 ): Promise<void> {
-  const res = await fetch(`/api/data/${collection}/${id}`, {
+  const res = await apiFetch(`/api/data/${collection}/${id}`, {
     method: "DELETE",
   });
   if (!res.ok) throw new Error("Failed to delete");
@@ -58,7 +60,7 @@ export async function uploadImage(
   formData.append("file", file);
   if (filename) formData.append("filename", filename);
 
-  const res = await fetch("/api/upload", {
+  const res = await apiFetch("/api/upload", {
     method: "POST",
     body: formData,
   });
@@ -67,7 +69,7 @@ export async function uploadImage(
 }
 
 export async function deleteImage(filename: string): Promise<void> {
-  const res = await fetch("/api/upload", {
+  const res = await apiFetch("/api/upload", {
     method: "DELETE",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ filename }),

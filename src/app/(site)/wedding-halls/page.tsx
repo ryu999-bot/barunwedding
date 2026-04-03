@@ -14,6 +14,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import type { WeddingHall } from "@/data/mock";
+import { apiFetch } from "@/lib/api";
 
 const set = (fn: (v: string) => void) => (v: string | null) => {
   if (v !== null) fn(v);
@@ -27,7 +28,7 @@ export default function WeddingHallsPage() {
   const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
-    fetch("/api/data/wedding-halls")
+    apiFetch("/api/data/wedding-halls")
       .then((res) => res.json())
       .then((data) => setWeddingHalls(data));
   }, []);

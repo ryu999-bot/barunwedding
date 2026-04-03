@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState, useCallback } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { apiFetch } from "@/lib/api";
 
 interface Slide {
   id: string;
@@ -40,7 +41,7 @@ export function HeroSection() {
   const [isAnimating, setIsAnimating] = useState(false);
 
   useEffect(() => {
-    fetch("/api/banners")
+    apiFetch("/api/banners")
       .then((r) => r.json())
       .then((data: Slide[]) => {
         if (data.length > 0) setSlides(data);

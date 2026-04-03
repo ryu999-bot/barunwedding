@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Heart, Award, Users, Shield, ShieldCheck, Gift } from "lucide-react";
+import { apiFetch } from "@/lib/api";
 
 const values = [
   {
@@ -35,7 +36,7 @@ export default function AboutPage() {
   const [data, setData] = useState<AboutData | null>(null);
 
   useEffect(() => {
-    fetch("/api/pages")
+    apiFetch("/api/pages")
       .then((res) => res.json())
       .then((json) => setData(json.about))
       .catch(console.error);

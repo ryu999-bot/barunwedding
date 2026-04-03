@@ -4,12 +4,13 @@ import { useState, useEffect } from "react";
 import { Star, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import type { Review } from "@/data/mock";
+import { apiFetch } from "@/lib/api";
 
 export function ReviewHighlight() {
   const [reviews, setReviews] = useState<Review[]>([]);
 
   useEffect(() => {
-    fetch("/api/data/reviews")
+    apiFetch("/api/data/reviews")
       .then((res) => res.json())
       .then((data: Review[]) => setReviews(data))
       .catch(console.error);

@@ -19,6 +19,7 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import type { WeddingHall } from "@/data/mock";
 import Link from "next/link";
+import { apiFetch } from "@/lib/api";
 
 export default function WeddingHallDetailPage({
   params,
@@ -30,7 +31,7 @@ export default function WeddingHallDetailPage({
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`/api/data/wedding-halls/${id}`)
+    apiFetch(`/api/data/wedding-halls/${id}`)
       .then((res) => {
         if (!res.ok) throw new Error("Not found");
         return res.json();

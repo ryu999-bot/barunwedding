@@ -10,11 +10,13 @@ export interface ConsultationPayload {
   meta?: Record<string, unknown>; // 시뮬레이션 결과, 체크리스트 상태 등
 }
 
+import { apiFetch } from "@/lib/api";
+
 export async function submitConsultation(
   payload: ConsultationPayload
 ): Promise<boolean> {
   try {
-    const res = await fetch("/api/data/consultations", {
+    const res = await apiFetch("/api/data/consultations", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

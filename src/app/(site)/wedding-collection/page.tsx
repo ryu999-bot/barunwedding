@@ -7,6 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import type { SdmeItem } from "@/data/mock";
+import { apiFetch } from "@/lib/api";
 
 const categories = ["전체", "스튜디오", "드레스", "헤어메이크업", "본식스냅", "패키지"];
 
@@ -15,7 +16,7 @@ export default function WeddingCollectionPage() {
   const [activeCategory, setActiveCategory] = useState("전체");
 
   useEffect(() => {
-    fetch("/api/data/collections")
+    apiFetch("/api/data/collections")
       .then((res) => res.json())
       .then((data) => setSdmeItems(data));
   }, []);

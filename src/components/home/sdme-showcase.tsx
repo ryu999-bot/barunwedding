@@ -5,12 +5,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import type { SdmeItem } from "@/data/mock";
+import { apiFetch } from "@/lib/api";
 
 export function SdmeShowcase() {
   const [sdmeItems, setSdmeItems] = useState<SdmeItem[]>([]);
 
   useEffect(() => {
-    fetch("/api/data/collections")
+    apiFetch("/api/data/collections")
       .then((res) => res.json())
       .then((data: SdmeItem[]) => setSdmeItems(data))
       .catch(console.error);

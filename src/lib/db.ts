@@ -1,7 +1,19 @@
 import fs from "fs";
 import path from "path";
 
-const DATA_DIR = path.join(process.cwd(), "data");
+const DATA_DIR = process.env.DATA_DIR || path.join(process.cwd(), "data");
+
+const ALLOWED_COLLECTIONS = [
+  "wedding-halls",
+  "collections",
+  "reviews",
+  "checklist",
+  "events",
+  "partnerships",
+  "consultations",
+  "banners",
+  "members",
+];
 
 function ensureDir() {
   if (!fs.existsSync(DATA_DIR)) {
@@ -10,6 +22,9 @@ function ensureDir() {
 }
 
 function getFilePath(collection: string) {
+  if (!ALLOWED_COLLECTIONS.includes(collection)) {
+    throw new Error(`허용되지 않는 컬렉션입니다: ${collection}`);
+  }
   return path.join(DATA_DIR, `${collection}.json`);
 }
 

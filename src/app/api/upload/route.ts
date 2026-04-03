@@ -9,7 +9,20 @@ export const config = {
 // Allow up to 100MB uploads for video files
 export const maxDuration = 60;
 
-const UPLOAD_DIR = path.join(process.cwd(), "public", "images");
+const UPLOAD_DIR =
+  process.env.UPLOAD_DIR || path.join(process.cwd(), "public", "images");
+
+const ALLOWED_EXTENSIONS = [
+  ".jpg",
+  ".jpeg",
+  ".png",
+  ".webp",
+  ".gif",
+  ".mp4",
+  ".webm",
+];
+
+const MAX_FILE_SIZE = 100 * 1024 * 1024; // 100MB
 
 export async function POST(req: NextRequest) {
   const formData = await req.formData();
@@ -20,13 +33,30 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "파일이 없습니다" }, { status: 400 });
   }
 
-  const finalName = filename || file.name;
+  const finalName = path.basename(filename || file.name);
+
+  const ext = path.extname(finalName).toLowerCase();
+  if (!ALLOWED_EXTENSIONS.includes(ext)) {
+    return NextResponse.json(
+      { error: `허용되지 않는 파일 형식입니다: ${ext}` },
+      { status: 400 }
+    );
+  }
+
   const buffer = Buffer.from(await file.arrayBuffer());
-  const filePath = path.join(UPLOAD_DIR, finalName);
+
+  if (buffer.length > MAX_FILE_SIZE) {
+    return NextResponse.json(
+      { error: "파일 크기가 100MB를 초과합니다" },
+      { status: 400 }
+    );
+  }
 
   if (!fs.existsSync(UPLOAD_DIR)) {
     fs.mkdirSync(UPLOAD_DIR, { recursive: true });
   }
+
+  const filePath = path.join(UPLOAD_DIR, finalName);
 
   fs.writeFileSync(filePath, buffer);
 
@@ -48,7 +78,8 @@ export async function DELETE(req: NextRequest) {
     );
   }
 
-  const filePath = path.join(UPLOAD_DIR, filename);
+  const safeName = path.basename(filename);
+  const filePath = path.join(UPLOAD_DIR, safeName);
 
   if (fs.existsSync(filePath)) {
     fs.unlinkSync(filePath);

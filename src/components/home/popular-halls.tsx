@@ -5,12 +5,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { Star, MapPin, ArrowRight } from "lucide-react";
 import type { WeddingHall } from "@/data/mock";
+import { apiFetch } from "@/lib/api";
 
 export function PopularHalls() {
   const [popular, setPopular] = useState<WeddingHall[]>([]);
 
   useEffect(() => {
-    fetch("/api/data/wedding-halls")
+    apiFetch("/api/data/wedding-halls")
       .then((res) => res.json())
       .then((data: WeddingHall[]) => setPopular(data.slice(0, 4)))
       .catch(console.error);

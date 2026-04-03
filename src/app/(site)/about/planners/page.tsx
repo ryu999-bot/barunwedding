@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Award, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { apiFetch } from "@/lib/api";
 
 interface Planner {
   name: string;
@@ -44,7 +45,7 @@ export default function PlannersPage() {
   const [data, setData] = useState<PageData | null>(null);
 
   useEffect(() => {
-    fetch("/api/pages")
+    apiFetch("/api/pages")
       .then((r) => r.json())
       .then((d) => setData(d));
   }, []);

@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { MapPin, Phone, Mail, Clock, Car, Train } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { apiFetch } from "@/lib/api";
 
 interface LocationData {
   address: string;
@@ -18,7 +19,7 @@ export default function LocationPage() {
   const [data, setData] = useState<LocationData | null>(null);
 
   useEffect(() => {
-    fetch("/api/pages")
+    apiFetch("/api/pages")
       .then((res) => res.json())
       .then((json) => setData(json.location))
       .catch(console.error);
